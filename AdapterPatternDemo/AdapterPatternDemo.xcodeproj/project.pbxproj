@@ -24,6 +24,11 @@
 		018F9EC7207CF2430059F450 /* AdapterUSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EC6207CF2430059F450 /* AdapterUSD.m */; };
 		018F9ECA207CF2800059F450 /* AdapterCNY.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EC9207CF2800059F450 /* AdapterCNY.m */; };
 		018F9ECF207CF3A80059F450 /* ObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9ECE207CF3A80059F450 /* ObjectAdapter.m */; };
+		018F9ED5207CF7A70059F450 /* DOTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9ED4207CF7A70059F450 /* DOTargetView.m */; };
+		018F9ED8207CF91A0059F450 /* DOTargetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9ED7207CF91A0059F450 /* DOTargetModel.m */; };
+		018F9EDC207CFA8A0059F450 /* DOTargetAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EDB207CFA8A0059F450 /* DOTargetAdapter.m */; };
+		018F9EE2207CFBEA0059F450 /* DOAnotherTargetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EE1207CFBEA0059F450 /* DOAnotherTargetModel.m */; };
+		018F9EE5207CFC500059F450 /* DOAnotherAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EE4207CFC500059F450 /* DOAnotherAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,17 @@
 		018F9ECC207CF2AE0059F450 /* TargetCNYProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetCNYProtocol.h; sourceTree = "<group>"; };
 		018F9ECD207CF3A80059F450 /* ObjectAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectAdapter.h; sourceTree = "<group>"; };
 		018F9ECE207CF3A80059F450 /* ObjectAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectAdapter.m; sourceTree = "<group>"; };
+		018F9ED3207CF7A70059F450 /* DOTargetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOTargetView.h; sourceTree = "<group>"; };
+		018F9ED4207CF7A70059F450 /* DOTargetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOTargetView.m; sourceTree = "<group>"; };
+		018F9ED6207CF91A0059F450 /* DOTargetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOTargetModel.h; sourceTree = "<group>"; };
+		018F9ED7207CF91A0059F450 /* DOTargetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOTargetModel.m; sourceTree = "<group>"; };
+		018F9ED9207CFA280059F450 /* DOTargetProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOTargetProtocol.h; sourceTree = "<group>"; };
+		018F9EDA207CFA8A0059F450 /* DOTargetAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOTargetAdapter.h; sourceTree = "<group>"; };
+		018F9EDB207CFA8A0059F450 /* DOTargetAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOTargetAdapter.m; sourceTree = "<group>"; };
+		018F9EE0207CFBEA0059F450 /* DOAnotherTargetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOAnotherTargetModel.h; sourceTree = "<group>"; };
+		018F9EE1207CFBEA0059F450 /* DOAnotherTargetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOAnotherTargetModel.m; sourceTree = "<group>"; };
+		018F9EE3207CFC500059F450 /* DOAnotherAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOAnotherAdapter.h; sourceTree = "<group>"; };
+		018F9EE4207CFC500059F450 /* DOAnotherAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOAnotherAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +247,9 @@
 		01884609207A903B001C5F9E /* AdapterPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				018F9ED2207CF6980059F450 /* Protocol */,
+				018F9ED1207CF6910059F450 /* Model */,
+				018F9ED0207CF68B0059F450 /* View */,
 				0188463E207A906C001C5F9E /* Controller */,
 				0188463D207A9060001C5F9E /* Bases */,
 				0188463C207A9052001C5F9E /* Resources */,
@@ -302,6 +321,38 @@
 			isa = PBXGroup;
 			children = (
 				018F9ECC207CF2AE0059F450 /* TargetCNYProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		018F9ED0207CF68B0059F450 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				018F9ED3207CF7A70059F450 /* DOTargetView.h */,
+				018F9ED4207CF7A70059F450 /* DOTargetView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		018F9ED1207CF6910059F450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				018F9ED6207CF91A0059F450 /* DOTargetModel.h */,
+				018F9ED7207CF91A0059F450 /* DOTargetModel.m */,
+				018F9EE0207CFBEA0059F450 /* DOAnotherTargetModel.h */,
+				018F9EE1207CFBEA0059F450 /* DOAnotherTargetModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		018F9ED2207CF6980059F450 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				018F9ED9207CFA280059F450 /* DOTargetProtocol.h */,
+				018F9EDA207CFA8A0059F450 /* DOTargetAdapter.h */,
+				018F9EDB207CFA8A0059F450 /* DOTargetAdapter.m */,
+				018F9EE3207CFC500059F450 /* DOAnotherAdapter.h */,
+				018F9EE4207CFC500059F450 /* DOAnotherAdapter.m */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -556,7 +607,12 @@
 			files = (
 				01884641207A9086001C5F9E /* DORootVC.m in Sources */,
 				0188461A207A903C001C5F9E /* main.m in Sources */,
+				018F9EE5207CFC500059F450 /* DOAnotherAdapter.m in Sources */,
+				018F9ED5207CF7A70059F450 /* DOTargetView.m in Sources */,
+				018F9ED8207CF91A0059F450 /* DOTargetModel.m in Sources */,
 				0188460C207A903B001C5F9E /* AppDelegate.m in Sources */,
+				018F9EE2207CFBEA0059F450 /* DOAnotherTargetModel.m in Sources */,
+				018F9EDC207CFA8A0059F450 /* DOTargetAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

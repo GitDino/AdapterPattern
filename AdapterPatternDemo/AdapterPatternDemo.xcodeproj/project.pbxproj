@@ -21,6 +21,9 @@
 		01884624207A903C001C5F9E /* AdapterPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01884623207A903C001C5F9E /* AdapterPatternDemoTests.m */; };
 		0188462F207A903C001C5F9E /* AdapterPatternDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0188462E207A903C001C5F9E /* AdapterPatternDemoUITests.m */; };
 		01884641207A9086001C5F9E /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01884640207A9086001C5F9E /* DORootVC.m */; };
+		018F9EC7207CF2430059F450 /* AdapterUSD.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EC6207CF2430059F450 /* AdapterUSD.m */; };
+		018F9ECA207CF2800059F450 /* AdapterCNY.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9EC9207CF2800059F450 /* AdapterCNY.m */; };
+		018F9ECF207CF3A80059F450 /* ObjectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 018F9ECE207CF3A80059F450 /* ObjectAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,13 @@
 		01884630207A903C001C5F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0188463F207A9086001C5F9E /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		01884640207A9086001C5F9E /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		018F9EC5207CF2430059F450 /* AdapterUSD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterUSD.h; sourceTree = "<group>"; };
+		018F9EC6207CF2430059F450 /* AdapterUSD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterUSD.m; sourceTree = "<group>"; };
+		018F9EC8207CF2800059F450 /* AdapterCNY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterCNY.h; sourceTree = "<group>"; };
+		018F9EC9207CF2800059F450 /* AdapterCNY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterCNY.m; sourceTree = "<group>"; };
+		018F9ECC207CF2AE0059F450 /* TargetCNYProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetCNYProtocol.h; sourceTree = "<group>"; };
+		018F9ECD207CF3A80059F450 /* ObjectAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectAdapter.h; sourceTree = "<group>"; };
+		018F9ECE207CF3A80059F450 /* ObjectAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,8 @@
 		0157A088207B7BAC00AF9032 /* AdapterPatternDemo-Simple */ = {
 			isa = PBXGroup;
 			children = (
+				018F9ECB207CF2950059F450 /* Protocol */,
+				018F9EC4207CF1CD0059F450 /* Model */,
 				0157A0BB207B7C2F00AF9032 /* Controller */,
 				0157A0BA207B7C2A00AF9032 /* Bases */,
 				0157A0B9207B7C2300AF9032 /* Resources */,
@@ -271,6 +283,27 @@
 				01884640207A9086001C5F9E /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		018F9EC4207CF1CD0059F450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				018F9EC5207CF2430059F450 /* AdapterUSD.h */,
+				018F9EC6207CF2430059F450 /* AdapterUSD.m */,
+				018F9EC8207CF2800059F450 /* AdapterCNY.h */,
+				018F9EC9207CF2800059F450 /* AdapterCNY.m */,
+				018F9ECD207CF3A80059F450 /* ObjectAdapter.h */,
+				018F9ECE207CF3A80059F450 /* ObjectAdapter.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		018F9ECB207CF2950059F450 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				018F9ECC207CF2AE0059F450 /* TargetCNYProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +525,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018F9ECF207CF3A80059F450 /* ObjectAdapter.m in Sources */,
+				018F9EC7207CF2430059F450 /* AdapterUSD.m in Sources */,
+				018F9ECA207CF2800059F450 /* AdapterCNY.m in Sources */,
 				0157A0BE207B7C7300AF9032 /* DORootVC.m in Sources */,
 				0157A099207B7BAE00AF9032 /* main.m in Sources */,
 				0157A08B207B7BAC00AF9032 /* AppDelegate.m in Sources */,

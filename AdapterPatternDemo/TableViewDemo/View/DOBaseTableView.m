@@ -21,7 +21,8 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        self.data_array = [NSMutableArray arrayWithObjects:@"111", @"222", @"333", @"444", nil];
+        self.backgroundColor = [UIColor lightGrayColor];
+        self.data_array = [NSMutableArray array];
         self.dataSource = self;
         self.delegate = self;
     }
@@ -50,6 +51,8 @@
         [self.data_array removeAllObjects];
         [self.data_array addObjectsFromArray:data_array];
     }
+    
+    [self reloadData];
 }
 
 #pragma mark - UITableViewDataSource数据源方法

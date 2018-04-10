@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) NSMutableArray *data_array;
 
+@property (nonatomic, strong) DOCustomTableView *custom_tableView;
+
 @end
 
 @implementation DORootVC
@@ -24,17 +26,25 @@
     self.title = @"TableView-Demo";
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    self.data_array = [NSMutableArray arrayWithObjects:@"测试数据1", @"你真的很棒", nil];
+    self.custom_tableView = [[DOCustomTableView alloc] initWithFrame:self.view.bounds];
     
+    [self.view addSubview:self.custom_tableView];
+    
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, 50, 50)];
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickLoadDataAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+#pragma mark - Event Cycle
+- (void)clickLoadDataAction:(UIButton *) btn
+{
     self.data_array = [NSMutableArray array];
     NSArray *test_array = @[@[@"3", @"2"], @[@"1"]];
     [self.data_array addObjectsFromArray:test_array];
     
-    DOCustomTableView *custom_tableView = [[DOCustomTableView alloc] initWithFrame:self.view.bounds];
-    
-    [custom_tableView refreshData:self.data_array];
-    
-    [self.view addSubview:custom_tableView];
+    [self.custom_tableView refreshData:self.data_array];
 }
 
 @end
